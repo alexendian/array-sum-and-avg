@@ -1,9 +1,8 @@
-# array-sum-and-avg
 #include<stdio.h>
 int main(){
 
-int num[5],i;
-float avg,sum=0.00;
+int num[5],i,sum=0;
+float avg;
 
 for(i=0;i<5;i++){
     printf("num[%d]= ",i);
@@ -14,8 +13,7 @@ for(i=0;i<5;i++){
 for(i=0;i<5;i++){
     sum=sum+num[i];
 }
-avg=sum/5.00;
-printf("sum=%.2f\n",sum);
-printf("average of sum = %.2f\n",avg);
+printf("sum= %d\n",sum);
+printf("average of sum = %.2f\n",(float)sum/5);
 return 0;
 }
